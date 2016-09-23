@@ -71,20 +71,12 @@ aws ec2 authorize-security-group-ingress \
   --cidr 0.0.0.0/0
 ```
 
-Grab the `EXTERNAL_IP` for one of the worker nodes:
-
-```
-NODE_PUBLIC_IP=$(aws ec2 describe-instances \
-  --filters "Name=tag:Name,Values=worker0" | \
-  jq -j '.Reservations[].Instances[].PublicIpAddress')
-```
-
 ---
 
 Test the nginx service using cURL:
 
 ```
-curl http://${NODE_PUBLIC_IP}:${NODE_PORT}
+curl http://${PUBLIC_IP_ADDRESS}:${NODE_PORT}
 ```
 
 ```
