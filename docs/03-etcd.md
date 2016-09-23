@@ -20,6 +20,8 @@ following reasons:
 
 Run the following commands on `etcd0`, `etcd1`, `etcd2`:
 
+_csshX is a useful utility to open many SSH sessions controlled by a single input_
+
 Move the TLS certificates in place:
 
 ```
