@@ -17,9 +17,9 @@ kubectl get pods -o wide
 ```
 ```
 NAME                     READY     STATUS    RESTARTS   AGE       IP           NODE
-nginx-2032906785-ms8hw   1/1       Running   0          21s       10.200.2.2   worker2
-nginx-2032906785-sokxz   1/1       Running   0          21s       10.200.1.2   worker1
-nginx-2032906785-u8rzc   1/1       Running   0          21s       10.200.0.2   worker0
+nginx-2032906785-ms8hw   1/1       Running   0          21s       10.200.2.2   worker2-dns
+nginx-2032906785-sokxz   1/1       Running   0          21s       10.200.1.2   worker1-dns
+nginx-2032906785-u8rzc   1/1       Running   0          21s       10.200.0.2   worker0-dns
 ```
 
 ```
